@@ -39,3 +39,17 @@ SELECT c.id, c.name, o.order_id, o.order_date
 FROM customer AS c
 RIGHT JOIN orders AS o
 ON c.id = o.customer_id;
+
+FULL OTER JOIN
+
+SELECT c.id, c.name, o.order_id, o.order_date
+FROM customer AS c
+FULL OUTER JOIN orders AS o
+ON c.id = o.customer_id;
+
+INNER JOIN
+
+SELECT c.id, c.name, o.order_id, o.order_date
+FROM customer AS c
+INNER JOIN orders AS o
+ON c.id = o.customer_id;
